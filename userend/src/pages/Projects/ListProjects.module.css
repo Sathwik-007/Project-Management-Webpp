@@ -1,0 +1,112 @@
+.mainContainer {
+  background-color: #CED8E1;
+  min-height: 100vh;
+  display: flex;
+}
+
+.leftDiv {
+  width: 67%;
+  flex-basis: 100%;
+  background-color: #0D1F2B;
+  min-height: 100vh;
+  position: relative;
+}
+
+.rightDiv {
+  background-color: #CED8E1;
+  flex-basis: 30%;
+  /* border: 1px solid black; */
+}
+
+/** Create Submission button styling*/
+.createSubmission {
+  display: flex;
+  margin: 0 auto;
+  top: 70%;
+  position: relative;
+  background-color: #0D1F2B;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  width: 183px;
+  justify-content: center;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.createSubmission:hover {
+  background-color: #204a69;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.07em;
+}
+
+.viewProjectsDiv {
+  position: absolute; /* Set the position of the div to absolute */
+  top: 50%; /* Position the div 50% from the top of the container */
+  left: 50%; /* Position the div 50% from the left of the container */
+  transform: translate(-50%, -50%); /* Translate the div back by 50% of its own width and height to center it */
+  height: 500px; /* Set the height of the div */
+  overflow: auto; /* Enable scrolling */
+  background-color: #0D1F2B;
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* The following style hides scrollbar
+in a browser.
+*/
+.viewProjectsDiv::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    display: block;
+  }
+  .leftDiv {
+    width: 100%;
+  }
+  .rightDiv {
+    padding: 50px;
+  }
+  .viewProjectsDiv {
+    width: 70%;
+  }
+  .createSubmission {
+    width: 190px;
+  }
+}
+
+.projectTile {
+  
+  display: block;
+  margin: 20px;
+  background-color: #6964E2;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+}
+
+.projectTile:hover {
+  text-decoration: none;
+}
+
+.project_title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  font-weight: 800;
+  color: white;
+}
+
+.project_status {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  justify-content: right;
+}
