@@ -1,0 +1,103 @@
+.mainContainer {
+  position: absolute;
+  width: 70vw;
+  height: 35vh;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: transparent; */
+  /* background-color: red; */
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+span {
+  /* height: 80px; */
+  font-size: 20px;
+}
+.recent_submissions {
+  height: 70%;
+  margin-top: 5%;
+  background-color: #6964e2;
+  width: 20%;
+  display: flex;
+  align-items: end;
+  padding: 0 10px;
+  border-radius: 8px;
+  color: white;
+  transition: 0.4s;
+}
+
+.recent_submissions:hover {
+  text-decoration: none;
+  color: white;
+  /* padding: 10px; */
+}
+
+.recent_submissions p {
+  font-weight: 700;
+}
+@media (min-width: 1281px) {
+  .recent_submissions:hover {
+    height: 75%;
+    width: 23%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Your styles go here */
+  .mainContainer {
+    margin-top: 5%;
+  }
+  .recent_submissions {
+    width: 25%;
+  }
+  .recent_submissions:hover {
+    height: 75%;
+    width: 23%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your styles go here */
+  .mainContainer {
+    margin-top: 10%;
+  }
+  .recent_submissions {
+    width: 25%;
+  }
+  .recent_submissions:hover {
+    height: 75%;
+    width: 23%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mainContainer {
+    display: block;
+    justify-content: center;
+    height: 70%;
+    width: 40%;
+    margin-top: 30%;
+  }
+  .recent_submissions {
+    margin-left: 15%;
+    width: 65%;
+    height: 30%;
+    justify-content: center;
+  }
+  .recent_submissions:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .mainContainer {
+    display: block;
+    width: 60%;
+  }
+  .recent_submissions:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
