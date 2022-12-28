@@ -1,0 +1,30 @@
+.carousel {
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #6964e2;
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    color: white;
+    transition: 0.4s;
+}
+
+.card:hover {
+    padding: 3% 0%;
+}
+
+.cardTitle {
+    font-weight: 800;
+}
+
+.cards:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        margin-top: 10%;
+    }
+}
